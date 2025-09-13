@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPET - Adoção e Venda Responsável de Animais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta de Cores e Tipografia */
+        :root {
+            --primary-color: #4A6E4F; /* Verde escuro (floresta) */
+            --secondary-color: #8E6857; /* Marrom suave */
+            --accent-color: #EF6F6C; /* Coral */
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --card-bg: #fff;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Layout Geral */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2em;
+        }
+
+        /* Seções */
+        .section {
+            padding: 4em 2em;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 0.5em;
+        }
+        .section-light { background-color: var(--light-bg); }
+        .section-white { background-color: var(--card-bg); }
+
+        /* Componentes */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 700; font-size: 1.5em; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover { color: var(--accent-color); }
+        .logo-text {
+            font-size: 1.5em;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 6em 2em;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .pet-grid, .ong-list, .feedback-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5em;
+            border-radius: 12px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+        .card h3 { color: var(--primary-color); }
+        .card-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .card-button:hover { background-color: #d15654; }
+
+        .cta-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4em 2em;
+            text-align: center;
+        }
+        .cta-section h2 { color: white; }
+
+        footer {
+            text-align: center;
+            padding: 2em;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .importance-list {
+            text-align: left;
+            margin: 2em auto;
+            max-width: 800px;
+        }
+        .importance-list li {
+            background-color: var(--light-bg);
+            padding: 1em;
+            border-left: 4px solid var(--accent-color);
+            margin-bottom: 1em;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">NPET</div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Adotar</a>
+            <a href="#">Comprar</a>
+            <a href="#">ONGs</a>
+            <a href="#">Perfil</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section hero">
+            <h1>Encontre o seu amigo de quatro patas.</h1>
+            <p>Conectamos corações, criando lares felizes e seguros em **Anápolis, GO**.</p>
+            <a href="#" class="card-button">Comece Agora</a>
+        </section>
+
+        <section class="section section-white">
+            <h2>Adoção: Uma Escolha que Transforma Vidas</h2>
+            <p>Adoção não é apenas sobre ganhar um novo amigo; é um ato de amor que faz a diferença. Ao adotar, você:</p>
+            <ul class="importance-list">
+                <li>**Combate o Abandono:** Ajuda a reduzir a população de animais desabrigados e a sobrecarga de ONGs.</li>
+                <li>**Salva uma Vida:** Oferece um lar e uma segunda chance a um animal que precisa.</li>
+                <li>**Incentiva a Causa:** Fortalece o trabalho de ONGs parceiras, como a **ONG Amor Animal**, que dedicam suas vidas ao resgate e cuidado de pets.</li>
+                <li>**Consegue um Amigo Único:** Muitos pets para adoção já têm temperamentos formados e personalidade definida, facilitando a adaptação.</li>
+            </ul>
+        </section>
+
+        <section class="section section-light">
+            <h2>Adote um Amigo</h2>
+            <p>Dê uma segunda chance a cães e gatos incríveis de ONGs parceiras.</p>
+            <div class="pet-grid">
+                <div class="card">
+                    <img src="https://oaidalleapiprodscus.blob.core.windows.net/b78809e5-9d3e-4614-a957-897b5e406214/images/dall-e-3.webp" alt="Foto de um gato">
+                    <h3>Miau</h3>
+                    <p>Idade: 2 anos</p>
+                    <a href="#" class="card-button">Adotar</a>
+                </div>
+                <div class="card">
+                    <img src="https://oaidalleapiprodscus.blob.core.windows.net/b78809e5-9d3e-4614-a957-897b5e406214/images/dall-e-3.webp" alt="Foto de um cachorro">
+                    <h3>Rex</h3>
+                    <p>Idade: 5 anos</p>
+                    <a href="#" class="card-button">Adotar</a>
+                </div>
+                <div class="card">
+                    <img src="https://oaidalleapiprodscus.blob.core.windows.net/b78809e5-9d3e-4614-a957-897b5e406214/images/dall-e-3.webp" alt="Foto de um cachorro">
+                    <h3>Bolinha</h3>
+                    <p>Idade: 1 ano</p>
+                    <a href="#" class="card-button">Adotar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-white">
+            <h2>Animais de Raça</h2>
+            <p>Compre seu filhote de criadores éticos e verificados, como a Esther, criadora de Golden Retrievers.</p>
+            <div class="pet-grid">
+                <div class="card">
+                    <img src="https://oaidalleapiprodscus.blob.core.windows.net/b78809e5-9d3e-4614-a957-897b5e406214/images/dall-e-3.webp" alt="Filhote de Golden Retriever">
+                    <h3>Filhote de Golden</h3>
+                    <p>Raça: Golden Retriever</p>
+                    <a href="#" class="card-button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="https://oaidalleapiprodscus.blob.core.windows.net/b78809e5-9d3e-4614-a957-897b5e406214/images/dall-e-3.webp" alt="Filhote de Pug">
+                    <h3>Filhote de Pug</h3>
+                    <p>Raça: Pug</p>
+                    <a href="#" class="card-button">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <h2>O que nossos usuários dizem</h2>
+            <div class="feedback-grid">
+                <div class="card">
+                    <p>"A plataforma é transparente e confiável. Pude ter certeza da procedência do meu filhote!"</p>
+                    <h3>João P.</h3>
+                </div>
+                <div class="card">
+                    <p>"Graças ao NPET, encontrei meu companheiro de forma segura. O suporte pós-adoção foi fundamental!"</p>
+                    <h3>Ana C.</h3>
+                </div>
+                <div class="card">
+                    <p>"Uma ferramenta essencial para quem se importa com o bem-estar animal. Recomendamos a todos!"</p>
+                    <h3>ONG Amor Animal</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <h2>Pronto para encontrar seu melhor amigo?</h2>
+            <p>Junte-se a nós e faça parte de um movimento de adoção e venda responsável.</p>
+            <a href="#" class="card-button">Cadastre-se Agora</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>NPET © 2025</p>
+    </footer>
+
+</body>
+</html>
